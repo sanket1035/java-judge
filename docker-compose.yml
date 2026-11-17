@@ -1,0 +1,16 @@
+# One-command deploy on a Linux server that has Docker:
+#   docker pull eclipse-temurin:17-jdk-alpine
+#   docker compose up -d --build
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    volumes:
+      # Lets the app start sandbox containers on the host's Docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Same path inside and outside, because sandbox containers mount run folders by host path
+      - /srv/javajudge/runs:/srv/javajudge/runs
