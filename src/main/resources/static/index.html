@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaJudge</title>
+  <meta name="description" content="Run Java code against test cases with time and memory limits.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f2937'/%3E%3Cpath d='M9 17l4 4 10-10' stroke='%2334d399' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">&#10003;</span>
+      <span>JavaJudge</span>
+    </div>
+    <nav>
+      <a href="https://github.com/sanket1035/java-judge" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="panel problem">
+      <label class="field-label" for="problem-select">Problem</label>
+      <select id="problem-select">
+        <option value="">Custom (write your own tests)</option>
+      </select>
+      <div id="problem-info" class="problem-info" hidden>
+        <div class="problem-head">
+          <h1 id="problem-title"></h1>
+          <span id="problem-difficulty" class="chip"></span>
+        </div>
+        <p id="problem-statement"></p>
+      </div>
+      <div id="custom-info" class="problem-info">
+        <h1>Custom run</h1>
+        <p>Paste any Java program with a <code>public class</code>, add test cases with input and expected output, and run. When a test fails, the debugging coach points to the likely bug and the line.</p>
+      </div>
+
+      <div class="limits">
+        <div><span>Time</span><strong>2 s</strong></div>
+        <div><span>Memory</span><strong>128 MB</strong></div>
+        <div><span>Output</span><strong>64 KB</strong></div>
+      </div>
+    </section>
+
+    <section class="panel editor">
+      <div class="editor-head">
+        <label class="field-label" for="code">Main.java</label>
+        <label class="upload">
+          <input id="file-input" type="file" accept=".java">
+          Upload .java
+        </label>
+      </div>
+      <textarea id="code" spellcheck="false" autocomplete="off" autocapitalize="off"></textarea>
+
+      <div class="tests-head">
+        <span class="field-label">Test cases</span>
+        <button id="add-test" class="btn ghost" type="button">+ Add test</button>
+      </div>
+      <div id="tests" class="tests"></div>
+
+      <div class="actions">
+        <button id="run" class="btn primary" type="button">Run tests</button>
+        <span id="status" class="status" role="status"></span>
+      </div>
+    </section>
+
+    <section class="panel results" aria-live="polite">
+      <div class="results-head">
+        <span class="field-label">Results</span>
+        <span id="score" class="score"></span>
+      </div>
+      <div id="results" class="results-body">
+        <p class="empty">Run your code to see a verdict for each test case.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built by <a href="https://github.com/sanket1035" target="_blank" rel="noopener">sanket1035</a>
+    &middot; Spring Boot + Docker sandbox
+  </footer>
+
+  <template id="test-row">
+    <div class="test-row">
+      <span class="test-num"></span>
+      <label>
+        <span>Input</span>
+        <textarea class="test-input" rows="2" spellcheck="false"></textarea>
+      </label>
+      <label>
+        <span>Expected output</span>
+        <textarea class="test-expected" rows="2" spellcheck="false"></textarea>
+      </label>
+      <button class="remove" type="button" aria-label="Remove test">&times;</button>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
