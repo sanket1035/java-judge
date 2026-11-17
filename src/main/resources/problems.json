@@ -1,0 +1,244 @@
+[
+  {
+    "id": "sum-of-two",
+    "title": "Sum of two numbers",
+    "difficulty": "Easy",
+    "statement": "Read two integers a and b on one line. Print a + b.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "2 3",
+        "expected": "5"
+      },
+      {
+        "input": "10 20",
+        "expected": "30"
+      },
+      {
+        "input": "-4 4",
+        "expected": "0"
+      },
+      {
+        "input": "1000000000 1000000000",
+        "expected": "2000000000"
+      }
+    ]
+  },
+  {
+    "id": "reverse-string",
+    "title": "Reverse a string",
+    "difficulty": "Easy",
+    "statement": "Read one line of text. Print it reversed.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "hello",
+        "expected": "olleh"
+      },
+      {
+        "input": "Zensar",
+        "expected": "rasneZ"
+      },
+      {
+        "input": "a b c",
+        "expected": "c b a"
+      },
+      {
+        "input": "x",
+        "expected": "x"
+      }
+    ]
+  },
+  {
+    "id": "palindrome",
+    "title": "Palindrome check",
+    "difficulty": "Easy",
+    "statement": "Read one word. Print YES if it reads the same backwards (ignore case), otherwise NO.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "madam",
+        "expected": "YES"
+      },
+      {
+        "input": "Racecar",
+        "expected": "YES"
+      },
+      {
+        "input": "java",
+        "expected": "NO"
+      },
+      {
+        "input": "a",
+        "expected": "YES"
+      }
+    ]
+  },
+  {
+    "id": "second-max",
+    "title": "Second largest element",
+    "difficulty": "Easy",
+    "statement": "First line: n. Second line: n integers. Print the second largest distinct value, or -1 if there is none.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "5\n3 9 1 9 7",
+        "expected": "7"
+      },
+      {
+        "input": "3\n4 4 4",
+        "expected": "-1"
+      },
+      {
+        "input": "2\n-1 -5",
+        "expected": "-5"
+      },
+      {
+        "input": "1\n8",
+        "expected": "-1"
+      }
+    ]
+  },
+  {
+    "id": "anagram",
+    "title": "Anagram check",
+    "difficulty": "Easy",
+    "statement": "Read two words on one line. Print YES if they are anagrams (ignore case), otherwise NO.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "listen silent",
+        "expected": "YES"
+      },
+      {
+        "input": "Triangle Integral",
+        "expected": "YES"
+      },
+      {
+        "input": "apple paple",
+        "expected": "YES"
+      },
+      {
+        "input": "rat car",
+        "expected": "NO"
+      }
+    ]
+  },
+  {
+    "id": "fizzbuzz",
+    "title": "FizzBuzz",
+    "difficulty": "Easy",
+    "statement": "Read n. For each i from 1 to n print Fizz if divisible by 3, Buzz if by 5, FizzBuzz if by both, else i. One value per line.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "5",
+        "expected": "1\n2\nFizz\n4\nBuzz"
+      },
+      {
+        "input": "15",
+        "expected": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz"
+      },
+      {
+        "input": "1",
+        "expected": "1"
+      }
+    ]
+  },
+  {
+    "id": "char-frequency",
+    "title": "Character frequency",
+    "difficulty": "Medium",
+    "statement": "Read one lowercase word. Print each letter that appears, in alphabetical order, as letter=count, separated by spaces.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "banana",
+        "expected": "a=3 b=1 n=2"
+      },
+      {
+        "input": "zensar",
+        "expected": "a=1 e=1 n=1 r=1 s=1 z=1"
+      },
+      {
+        "input": "aaaa",
+        "expected": "a=4"
+      }
+    ]
+  },
+  {
+    "id": "rotate-array",
+    "title": "Rotate array right",
+    "difficulty": "Medium",
+    "statement": "First line: n and k. Second line: n integers. Rotate the array right by k steps and print it, space separated. k can be larger than n.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "5 2\n1 2 3 4 5",
+        "expected": "4 5 1 2 3"
+      },
+      {
+        "input": "3 3\n7 8 9",
+        "expected": "7 8 9"
+      },
+      {
+        "input": "4 5\n1 2 3 4",
+        "expected": "4 1 2 3"
+      },
+      {
+        "input": "1 100\n42",
+        "expected": "42"
+      }
+    ]
+  },
+  {
+    "id": "two-sum",
+    "title": "Two sum",
+    "difficulty": "Medium",
+    "statement": "First line: n and target. Second line: n integers. Print the 0-based indexes i j (i < j) of the first pair that adds up to target, or -1 -1.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "4 9\n2 7 11 15",
+        "expected": "0 1"
+      },
+      {
+        "input": "3 6\n3 2 4",
+        "expected": "1 2"
+      },
+      {
+        "input": "3 100\n1 2 3",
+        "expected": "-1 -1"
+      },
+      {
+        "input": "2 6\n3 3",
+        "expected": "0 1"
+      }
+    ]
+  },
+  {
+    "id": "factorial-big",
+    "title": "Big factorial",
+    "difficulty": "Medium",
+    "statement": "Read n (0 to 100). Print n! exactly. Hint: it does not fit in a long.",
+    "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // write your code here\n    }\n}\n",
+    "testCases": [
+      {
+        "input": "0",
+        "expected": "1"
+      },
+      {
+        "input": "5",
+        "expected": "120"
+      },
+      {
+        "input": "20",
+        "expected": "2432902008176640000"
+      },
+      {
+        "input": "25",
+        "expected": "15511210043330985984000000"
+      }
+    ]
+  }
+]
