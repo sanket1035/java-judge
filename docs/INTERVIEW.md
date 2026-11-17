@@ -5,7 +5,7 @@
 1. **Problem.** When a student's code fails a test on HackerRank, all they see is "Wrong answer". They don't learn why.
 2. **What I built.** A Spring Boot service that compiles Java, runs it against test cases in a Docker sandbox, and a debugging coach that names the likely bug: int overflow, off-by-one, the Scanner nextLine trap, infinite loops, edge cases.
 3. **Hardest part.** Running untrusted code safely: timeouts that really kill the program, no network, memory and process limits, no access to server secrets, and not deadlocking on large output.
-4. **Result.** 59 automated tests, including sandbox tests that try a network call, a file write, a memory bomb and a thread bomb, and check that each one fails.
+4. **Result.** 89 automated tests, including sandbox tests that try a network call, a file write, a memory bomb and a thread bomb, and check that each one fails.
 5. **Next step.** Run test cases in parallel, and rate-limit per user.
 
 ## Questions to expect

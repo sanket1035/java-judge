@@ -62,7 +62,7 @@ class RunControllerTest {
     void listsProblems() throws Exception {
         mvc.perform(get("/api/problems"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()").value(10))
+                .andExpect(jsonPath("$.length()").value(25))
                 .andExpect(jsonPath("$[0].id").value("sum-of-two"));
     }
 

@@ -23,14 +23,14 @@ A Java code runner with a debugging coach. Paste or upload a Java program, give 
 
 Plus null pointers, division by zero, reading past the input, stack overflow, out of memory and changing a list while looping over it.
 
-- **Comes with 10 practice problems** (two sum, palindrome, anagram, rotate array, big factorial and others), each checked by a reference solution in the tests.
+- **Comes with 25 practice problems** (two sum, palindrome, balanced brackets, binary search, max subarray, big factorial and more), each checked by a reference solution in the tests.
 
 ## Run it locally
 
 Needs Java 17 or newer.
 
 ```bash
-./mvnw test              # 59 tests (Docker tests skip if Docker isn't running)
+./mvnw test              # 89 tests (Docker tests skip if Docker isn't running)
 ./mvnw spring-boot:run   # http://localhost:8080
 ```
 
